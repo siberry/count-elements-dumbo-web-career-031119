@@ -1,4 +1,8 @@
 def count_elements(array)
-  # code goes here
+  count_elements = {}
+  array.each { |element|
+    count = array.count(element)
+    count_elements[element] = count }
+  count_elements
 end
  
